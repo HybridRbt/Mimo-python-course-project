@@ -25,4 +25,8 @@ q = 'What\'s the air speed \
 velocity of an unladen swallow?'
 word = q[-8:-1]
 q = q.replace(word, "rabbit")
-print(q) 
+print(q)
+
+# Chapeter 4
+# modify chap 2 & 3, check git log
+print(film1[1] > film2[1])
