@@ -27,6 +27,23 @@ word = q[-8:-1]
 q = q.replace(word, "rabbit")
 print(q)
 
-# Chapeter 4
+# Chapter 4
 # modify chap 2 & 3, check git log
 print(film1[1] > film2[1])
+
+# Chapter 6
+f1 = ["Brazil", 1985, 7.5]
+f2 = ["12 Monkeys", 1995, 8]
+f3 = ["The Zero Theorem", 2013, 6.1]
+f4 = ["Life of Brian", 1979, 9]
+
+filmography = [f1, f2, f3, f4]
+difference = filmography[0][2] - filmography[1][2]
+
+if difference == 0:
+    print("They're equally good")
+elif difference < 0:
+    print(filmography[1][0] + " is better")
+else:
+    print(filmography[1][0] + " isn't as good")
+    
