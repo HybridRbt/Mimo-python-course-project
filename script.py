@@ -68,3 +68,18 @@ film_dict = {}
 for i in range(len(films)):
     film_dict[films[i][0]] = films[i][1:3]
 print(film_dict["Pi"])
+
+# Chapter 10
+class Film:
+    def __init__(self, title, year, actors):
+        self.title = title
+        self.year = year
+        self.actors = actors
+
+    def display_details(self):
+        title = self.title
+        actors = str(self.actors)
+        print(title + " with: " + actors)
+
+film = Film("Holy Grail", 1975, ["J. Cleese", "T. Gilliam"])
+film.display_details()
