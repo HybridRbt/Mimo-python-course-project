@@ -46,4 +46,25 @@ elif difference < 0:
     print(filmography[1][0] + " is better")
 else:
     print(filmography[1][0] + " isn't as good")
-    
+
+# Chapter 7
+film1 = ["cyllos", 2016, 6.2]
+film2 = ["12 Monkeys", 1995, 8]
+film3 = ["zardos", 1974, 5.8]
+film4 = ["life of brian", 1979, 9]
+filmlist = [film1, film2, film3, film4]
+for film in filmlist:
+    if film[2] >= 9:
+        print("Watch " + film[0])
+
+# Chapter 9
+film1 = ["Brazil", "Gilliam", 7.5]
+film2 = ["Jaws", "Spielberg", 8]
+film3 = ["Pi", "Aranovsky", 7.5]
+film4 = ["Monty Python and the Holy Grail", "Gilliam", 8]
+
+films = [film1, film2, film3, film4]
+film_dict = {}
+for i in range(len(films)):
+    film_dict[films[i][0]] = films[i][1:3]
+print(film_dict["Pi"])
